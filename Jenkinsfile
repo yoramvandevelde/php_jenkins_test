@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
 	    steps {
-		sh 'env && echo 0'
+		sh 'env && echo 0 && cat ~/.ssh/id_rsa.pub'
 	    } 
         }
     }
