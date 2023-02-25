@@ -3,8 +3,12 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'echo "go!"; exit 0'
-		env
+                step { 
+			sh 'echo "go!"; exit 0'
+		}
+		step {
+			env
+		}
             }
         }
     }
