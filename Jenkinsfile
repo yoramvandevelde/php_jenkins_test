@@ -2,11 +2,8 @@ pipeline {
     agent any
     stages {
         stage('Test') {
-            steps {
-		sh 'echo "go!"; exit 0'
-	    }
 	    steps {
-		env
+		env && echo 0;
 	    } 
         }
     }
