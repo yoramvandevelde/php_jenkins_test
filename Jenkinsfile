@@ -5,10 +5,14 @@ pipeline {
         stage('build') {
             steps {
                 stage('PHP version') {
-			sh 'php --version'
+			steps {
+				sh 'php --version'
+			}
 		}
 		stage('Env') {
-			env
+			steps {
+				env
+			}
 		}
             }
         }
