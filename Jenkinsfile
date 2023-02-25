@@ -7,8 +7,7 @@ pipeline {
 	    }
 	    steps {
 		env
-	    }
-            }
+	    } 
         }
     }
     post {
