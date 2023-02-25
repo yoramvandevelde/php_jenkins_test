@@ -4,7 +4,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'php --version'
+                stage('PHP version') {
+			sh 'php --version'
+		}
+		stage('Env') {
+			env
+		}
             }
         }
     }
